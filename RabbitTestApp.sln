@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitTestApp", "RabbitTestApp\RabbitTestApp.csproj", "{49038EBD-BD8C-4FC0-9AF4-61119C911858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitTestApp", "RabbitTestApp\RabbitTestApp.csproj", "{49038EBD-BD8C-4FC0-9AF4-61119C911858}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{05CBE209-B4BD-45F4-9094-B594ADC19482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{01EA96CA-71FE-4F2C-B973-D41CE9258706}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events\Events.csproj", "{01EA96CA-71FE-4F2C-B973-D41CE9258706}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandlers", "EventHandlers\EventHandlers.csproj", "{B826F5A6-394F-4338-9019-A4C7E215E2CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHandlers", "EventHandlers\EventHandlers.csproj", "{B826F5A6-394F-4338-9019-A4C7E215E2CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{8739333B-E2C2-4A98-B61D-E902D3AA4E52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B826F5A6-394F-4338-9019-A4C7E215E2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B826F5A6-394F-4338-9019-A4C7E215E2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B826F5A6-394F-4338-9019-A4C7E215E2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8739333B-E2C2-4A98-B61D-E902D3AA4E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8739333B-E2C2-4A98-B61D-E902D3AA4E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8739333B-E2C2-4A98-B61D-E902D3AA4E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8739333B-E2C2-4A98-B61D-E902D3AA4E52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
