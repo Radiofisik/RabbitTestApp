@@ -6,6 +6,7 @@ using Autofac;
 using Autofac.Core;
 using Rebus.Config;
 using Rebus.Handlers;
+using Rebus.Persistence.InMem;
 using Rebus.Retry.Simple;
 
 namespace EventHandlers
@@ -26,9 +27,11 @@ namespace EventHandlers
             builder.RegisterRebus((configurer, context) => configurer
                     .Logging(l => l.Serilog())
                     .Transport(t => t.UseRabbitMq("amqp://docker", "testappqueue"))
+                    .Timeouts(t => t.StoreInMemory())
                 .Options(o => {
                     o.SetNumberOfWorkers(1);
                     o.SetMaxParallelism(30);
+                        
                 }));
 
             builder.RegisterType<EventSubscriber>().AsImplementedInterfaces();
