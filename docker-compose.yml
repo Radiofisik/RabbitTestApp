@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rabbittestapp:
+    image: ${DOCKER_REGISTRY-}rabbittestapp
+    build:
+      context: .
+      dockerfile: RabbitTestApp/Dockerfile
